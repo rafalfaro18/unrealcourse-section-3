@@ -32,3 +32,6 @@
 
 - Sketches for how puzzles work.
 
+### Notes
+
+- Repo structure and .gitignore set up manually instead of using UE4's VCS capabilities.
