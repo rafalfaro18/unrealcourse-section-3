@@ -35,3 +35,5 @@
 ### Notes
 
 - Repo structure and .gitignore set up manually instead of using UE4's VCS capabilities.
+
+- Project created with UE4 4.21.2
