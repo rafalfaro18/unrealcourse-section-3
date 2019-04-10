@@ -18,7 +18,10 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// ...
+	// Find the owning object
+	// Store it in a variable called Owner
+	// Get the type right (or use auto)
+	// Try and access the Owner's rotation
 	
 }
 
