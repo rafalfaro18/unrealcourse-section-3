@@ -1,6 +1,7 @@
 // Copyright (c) 2019 Rafael Alfaro
 
 #include "OpenDoor.h"
+#include "Gameframework/Actor.h"
 
 // Sets default values for this component's properties
 UOpenDoor::UOpenDoor()
@@ -20,8 +21,14 @@ void UOpenDoor::BeginPlay()
 
 	// Find the owning object
 	// Store it in a variable called Owner
-	// Get the type right (or use auto)
+	
+	AActor* Owner = GetOwner();
+
 	// Try and access the Owner's rotation
+
+	FString ObjectName = Owner->GetName();
+	FString OwnerRotation = Owner->GetTransform().GetRotation().ToString();
+	UE_LOG(LogTemp, Warning, TEXT("%s is at %s"), *ObjectName, *OwnerRotation);
 	
 }
 
