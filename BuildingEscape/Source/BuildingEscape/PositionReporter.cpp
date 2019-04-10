@@ -20,9 +20,10 @@ void UPositionReporter::BeginPlay()
 	Super::BeginPlay();
 
 	FString ObjectName = GetOwner()->GetName();
+	FString ObjectPos = "X=something, Y=something else, etc";
 
 	// * before a FString gets it as a TCHAR needed by UE_LOG
-	UE_LOG(LogTemp, Warning, TEXT("Position report reporting for duty on %s!"), *ObjectName);
+	UE_LOG(LogTemp, Warning, TEXT("%s is at %s"), *ObjectName , *ObjectPos);
 	
 }
 
