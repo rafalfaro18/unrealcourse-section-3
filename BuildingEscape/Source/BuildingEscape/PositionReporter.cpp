@@ -20,9 +20,7 @@ void UPositionReporter::BeginPlay()
 	Super::BeginPlay();
 
 	FString ObjectName = GetOwner()->GetName();
-	FTransform Transform = GetOwner()->GetActorTransform();
-	FVector Position = Transform.GetTranslation();
-	FString ObjectPos = GetOwner()->GetTransform().GetTranslation().ToString();
+	FString ObjectPos = GetOwner()->GetTransform().GetLocation().ToString();
 
 	// * before a FString gets it as a TCHAR needed by UE_LOG
 	UE_LOG(LogTemp, Warning, TEXT("%s is at %s"), *ObjectName , *ObjectPos);
