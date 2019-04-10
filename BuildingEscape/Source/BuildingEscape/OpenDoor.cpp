@@ -19,16 +19,17 @@ void UOpenDoor::BeginPlay()
 {
 	Super::BeginPlay();
 
-	// Find the owning object
-	// Store it in a variable called Owner
+	// Find the owning Actor
 	
 	AActor* Owner = GetOwner();
 
-	// Try and access the Owner's rotation
+	// Create a rotator
 
 	FString ObjectName = Owner->GetName();
 	FString OwnerRotation = Owner->GetTransform().GetRotation().ToString();
 	UE_LOG(LogTemp, Warning, TEXT("%s is at %s"), *ObjectName, *OwnerRotation);
+
+	// Set the door rotation
 	
 }
 
