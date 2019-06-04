@@ -15,7 +15,10 @@ UGrabber::UGrabber()
 
 // Called when the game starts
 void UGrabber::BeginPlay()
-{
+{++
+
+
+
 	Super::BeginPlay();
 
 	UE_LOG(LogTemp, Warning, TEXT("Grabber reporting for duty!") );
@@ -28,6 +31,10 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
-	// ...
+	// Get player view point this tick
+
+	// Ray-cast out to reach distance
+
+	// See what we hit
 }
 
