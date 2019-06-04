@@ -42,7 +42,10 @@ void UGrabber::TickComponent(float DeltaTime, ELevelTick TickType, FActorCompone
 		OUT PlayerViewPointRotation
 	);
 
-	UE_LOG(LogTemp, Warning, TEXT("%s"), *PlayerViewPointLocation.ToString());
+	UE_LOG(LogTemp, Warning, TEXT("Location: %s, Rotation: %s"), 
+		*PlayerViewPointLocation.ToString(),
+		*PlayerViewPointRotation.ToString()
+	);
 
 	// Ray-cast out to reach distance
 
