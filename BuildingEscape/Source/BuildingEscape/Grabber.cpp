@@ -37,6 +37,16 @@ void UGrabber::BeginPlay()
 		UE_LOG(LogTemp, Error, TEXT("%s missing physics handle component"), *GetOwner()->GetName());
 	}
 	
+	/// Loof for attached Physics Handle
+	PawnMovement = GetOwner()->FindComponentByClass<UFloatingPawnMovement>();
+
+	if (PawnMovement) {
+		// Pawn movement component is found
+	}
+	else {
+		// Log at error verbosity if no component found
+		UE_LOG(LogTemp, Error, TEXT("%s missing pawn movement component"), *GetOwner()->GetName());
+	}
 }
 
 
