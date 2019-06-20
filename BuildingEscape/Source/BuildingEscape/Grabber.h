@@ -42,4 +42,7 @@ private:
 
 	//Setup (asumed) attached input component
 	void SetupInputComponent();
+
+	// Return hit for first physics body in reach
+	const FHitResult GetFirstPhysicsBodyInReach();
 };
