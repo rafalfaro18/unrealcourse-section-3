@@ -36,4 +36,7 @@ private:
 
 	// Called when grab is released.
 	void Release();
+
+	// Find attached physics handle
+	void FindPhysicsHandleComponent();
 };
