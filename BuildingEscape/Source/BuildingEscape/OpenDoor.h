@@ -23,7 +23,6 @@ protected:
 	// Called when the game starts
 	virtual void BeginPlay() override;
 
-	void OpenDoor();
 	void CloseDoor();
 
 public:	
@@ -34,16 +33,12 @@ public:
 	FOnOpenRequest OnOpenRequest;
 
 private:
-	UPROPERTY(EditAnywhere)
-	float OpenAngle = -90.0f;
 
 	UPROPERTY(EditAnywhere)
 	ATriggerVolume* PressurePlate = nullptr;
 
 	UPROPERTY(EditAnywhere)
-	float DoorCloseDelay = 1.0f;
-
-	float LastDoorOpenTime;
+	float TriggerMass = 30.f;
 
 	//Owning Door
 	AActor* Owner = nullptr;
