@@ -37,3 +37,7 @@
 - Repo structure and .gitignore set up manually instead of using UE4's VCS capabilities.
 
 - Project created with UE4 4.21.2
+
+### Instructions
+
+- ``git clone https://github.com/rafalfaro18/unrealcourse-section-3.git 03_BuildingEscape``
